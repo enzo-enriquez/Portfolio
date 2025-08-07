@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Humanas.css">
+    <title>Portfólio Ez444</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="../../images/logomeraki.jpeg" alt="logo meraki">
+                </a>
+            </div>
+            <nav class="Menu-desktop">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Matérias</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../Matérias/Linguagens/Linguagens.html">Linguagens</a>
+                            <a class="dropdown-item" href="../Matérias/Humanas/Humanas.html">Humanas</a>
+                            <a class="dropdown-item" href="../Matérias/Natureza/Natureza.html">Natureza</a>
+                            <a class="dropdown-item" href="../Matérias/Matemática/Matemática.html">Matemática</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Técnico</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">IoT</a>
+                            <a class="dropdown-item" href="#">Modelagem de Sistemas</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Mais sobre mim</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <h2>Matéria Específica</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>1º Trimestre</h3>
+                        <p>Conteúdo abordado no primeiro trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img class="atividade-humanas-1" src="../../images/QUIZ - HUMANAS.png" alt="Atividade 1">
+                                <div>
+                                    <p>Atividade 1 - QUIZ</p>
+                                    <p>O grupo criou um quiz interativo sobre o imperialismo dos Estados Unidos, focando na Marcha para o Oeste, a Doutrina Monroe e o expansionismo, após pesquisa na plataforma Geekie. Habilidades trabalhadas: H4, H7, H8.</p>
+                                    <a href="https://www.canva.com/design/DAGiWwCIfrg/71wmABF2c5slz3jhPdfnFA/edit?utm_content=DAGiWwCIfrg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Visitar atividade</a>
+                                </div>
+                            </div>
+                            <div class="activity">
+                                <img class="atividade-humanas-2" src="../../images/UNAIDS - HUMANAS.png" alt="Atividade 2">
+                                <div>
+                                    <p>Atividade 2 - UNAIDS</p>
+                                    <p>O grupo pesquisou sobre o UNAIDS, programa da ONU contra o HIV/AIDS, analisando seu funcionamento e impacto global. O trabalho destacou a importância da cooperação internacional em saúde e o papel das organizações multilaterais na solução de desafios complexos. Habilidades trabalhadas: C2, H8, H10, H12.</p>
+                                    <a href="https://www.canva.com/design/DAGg9IDYaBs/1R4hhO5FK8FN_u8gp8cVCw/edit?utm_content=DAGg9IDYaBs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Visitar atividade</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>2º Trimestre</h3>
+                        <p>Conteúdo abordado no segundo trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img src="your-image-url4.jpg" alt="Atividade 1">
+                                <p>Atividade 1</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url5.jpg" alt="Atividade 2">
+                                <p>Atividade 2</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url6.jpg" alt="Atividade 3">
+                                <p>Atividade 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>3º Trimestre</h3>
+                        <p>Conteúdo abordado no terceiro trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img src="your-image-url7.jpg" alt="Atividade 1">
+                                <p>Atividade 1</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url8.jpg" alt="Atividade 2">
+                                <p>Atividade 2</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url9.jpg" alt="Atividade 3">
+                                <p>Atividade 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Toggle dropdown visibility
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(event) {
+                event.preventDefault();
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            });
+        });
+
+        // Close dropdown if click outside
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.dropdown-toggle')) {
+                document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+                    menu.classList.remove('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

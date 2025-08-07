@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="IOT.css">
+    <title>Portfólio Ez444</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="../../images/logomeraki.jpeg" alt="logo meraki">
+                </a>
+            </div>
+            <nav class="Menu-desktop">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Matérias</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/Portfolio-main/Matérias/Linguagens/Linguagens.html">Linguagens</a>
+                            <a class="dropdown-item" href="/Portfolio-main/Matérias/Humanas/Humanas.html">Humanas</a>
+                            <a class="dropdown-item" href="/Portfolio-main/Matérias/Natureza/Natureza.html">Natureza</a>
+                            <a class="dropdown-item" href="/Portfolio-main/Matérias/Matemática/Matemática.html">Matemática</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Técnico</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/Portfolio-main/Técnico/IOT/IOT.html">IoT</a>
+                            <a class="dropdown-item" href="/Portfolio-main/Técnico/Modelagem-de-sistemas/Modelagem-de-sistemas.html">Modelagem de Sistemas</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Mais sobre mim</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <h2>Matéria Específica</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>1º Trimestre</h3>
+                        <p>Conteúdo abordado no primeiro trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img class="atividade-tecnico-1" src="../../images/HAMBURGUERIA - MODELAGEM DE SISTEMAS.png" alt="Atividade 1 - HAMBURGUERIA">
+                                <div>
+                                    <p>Atividade 1 - HAMBURGUERIA</p>
+                                    <p>RF, RNF and RN
+                                        Competências e Habilidades desenvolvidas: H4, H7, H8
+                                        Objetivo: Criar uma tabela sobre uma hamburgueria com seus requistios funcionais, não funcionais e suas regras de negócio.</p>
+                                    <a href="https://docs.google.com/spreadsheets/d/1Q6n2Lv8y-bUOLz2G0FUhhUQFA_LWcxVuuFEw0himmEA/edit?usp=sharing">Visitar atividade</a>
+                                </div>
+                            </div>
+                            <div class="activity">
+                                <img class="atividade-humanas-2" src="../../images/AQUA SENSE - MODELAGEM DE SISTEMAS.png" alt="Atividade 2">
+                                <div>
+                                    <p>Atividade 2 - AQUASENSE</p>
+                                    <p>S.A - Apresentação 01
+                                        Competências e Habilidades desenvolvidas: H1, H2, H3, H4, H6, H7
+                                        Objetivo: Criar uma apresentação para apresentarmos a primeira parte da SA "Situação de aprendizagem".</p>
+                                    <a href="https://www.canva.com/design/DAGhhINJpos/JIw9cY-KNCqUU8IvQjFYIg/edit?utm_content=DAGhhINJpos&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Visitar atividade</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>2º Trimestre</h3>
+                        <p>Conteúdo abordado no segundo trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img src="your-image-url4.jpg" alt="Atividade 1">
+                                <p>Atividade 1</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url5.jpg" alt="Atividade 2">
+                                <p>Atividade 2</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url6.jpg" alt="Atividade 3">
+                                <p>Atividade 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>3º Trimestre</h3>
+                        <p>Conteúdo abordado no terceiro trimestre.</p>
+                        <div class="activities">
+                            <div class="activity">
+                                <img src="your-image-url7.jpg" alt="Atividade 1">
+                                <p>Atividade 1</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url8.jpg" alt="Atividade 2">
+                                <p>Atividade 2</p>
+                            </div>
+                            <div class="activity">
+                                <img src="your-image-url9.jpg" alt="Atividade 3">
+                                <p>Atividade 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Toggle dropdown visibility
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(event) {
+                event.preventDefault();
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            });
+        });
+
+        // Close dropdown if click outside
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.dropdown-toggle')) {
+                document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+                    menu.classList.remove('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
